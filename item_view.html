@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Item View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="Stylesheet1.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="item-view.js" async></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="#">kitchen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                
+                <a class="nav-link active" href="./login.html">Home</a>
+                <a class="nav-link" href="./item_view.html ">Item</a>
+                <a class="nav-link " href="./search.html" ">Search</a>
+               
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 id="h1id" class="headstyle"> Welcome to Items page !</h1>
+    </div>
+
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title"> knife </span>
+            <img class="shop-item-image" src="img/1.jpg"height="130" width="200" onmouseover="update(this)"
+            onmouseout="undo()">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title"> Bowl</span>
+            <img class="shop-item-image" src="img/2.jpg"height="130" width="200" onmouseover="update(this)"
+            onmouseout="undo()">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title"> Bot </span>
+            <img class="shop-item-image" src="img/3.jpg"height="130" width="200" onmouseover="update(this)"
+            onmouseout="undo()">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title"> Cup </span>
+            <img class="shop-item-image" src="img/4.jpg"height="130" width="200" onmouseover="update(this)"
+            onmouseout="undo()">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+
+</body>
+</html>
